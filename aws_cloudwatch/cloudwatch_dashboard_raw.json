@@ -1,0 +1,21 @@
+{
+    "widgets": [
+        {
+            "height": 6,
+            "width": 12,
+            "y": 0,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/SNS", "NumberOfMessagesPublished", "TopicName", "alarm-topic-terraform", { "id": "m1", "label": "SnS Publis", "stat": "Sum" } ],
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "helloChatbot", { "id": "m2", "label": "LambdaInvo", "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "title": "try first time"
+            }
+        }
+    ]
+}
